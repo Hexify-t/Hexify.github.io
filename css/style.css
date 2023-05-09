@@ -1,0 +1,229 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background: #fafafa;
+}
+
+header a {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2C73D2;
+}
+
+.copy-button {
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+}
+
+.copy-message {
+    display: none;
+    font-size: 14px;
+    color: green;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.copy-message.show {
+    display: block;
+}
+
+a, a:hover, a:focus {
+    color: #528CD8;
+}
+
+strong {
+    font-weight: 600;
+}
+
+hr {
+    margin: 0;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 24px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    margin: 0;
+    padding: 1rem 0 0 0;
+    font-size: 14px;
+    background: none;
+}
+.breadcrumb .breadcrumb-item a {
+    font-weight: 600;
+}
+
+/* Card */
+.card.bg-red,
+.card.bg-blue,
+.card.bg-green,
+.card.bg-grey {
+    border: none;
+}
+.card.bg-red .card-header,
+.card.bg-blue .card-header,
+.card.bg-green .card-header,
+.card.bg-grey .card-header {
+    font-weight: 600;
+    /* border-bottom: 1px solid #fafafa; */
+}
+.card.bg-blue a,
+.card.bg-green a {
+    color: #ffffff;
+}
+.card.bg-grey a {
+    color: #287aa9;
+}
+
+/* Text & background */
+.bg-red {
+    background: #dc3545;
+}
+.bg-blue {
+    background: #2C73D2;
+}
+.bg-green {
+    background: #96ad3e;
+}
+.bg-grey {
+    background: #eeeeee;
+}
+
+/* Tool */
+.form-text, .form-text:focus, .form-text:hover, .form-text:active {
+    resize: none;
+    outline: 0 none transparent;
+    color: #ffffff;
+    background: rgb(82, 140, 216);
+    border: none;
+}
+.form-text[readonly] {
+    background: rgb(82, 140, 216);
+}
+#converter .form-control::-webkit-input-placeholder { color: #ffffff; }  /* WebKit, Blink, Edge */
+#converter .form-control:-moz-placeholder { color: #ffffff; }  /* Mozilla Firefox 4 to 18 */
+#converter .form-control::-moz-placeholder { color: #ffffff; }  /* Mozilla Firefox 19+ */
+#converter .form-control:-ms-input-placeholder { color: #ffffff; }  /* Internet Explorer 10-11 */
+#converter .form-control::-ms-input-placeholder { color: #ffffff; }  /* Microsoft Edge */
+
+/* Footer */
+footer {
+    padding: 1rem 0 3rem 0;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+#converter .direct .alert {
+    margin: 0;
+}
+
+.btn-primary {
+    background: #287aa9;
+    border: none;
+}
+.btn-primary:hover, .btn-primary:active {
+    background: #1C5576 !important;
+}
+
+/* Switch */
+.switch-container {
+    position: relative;
+    padding-left: 52px;
+    line-height: 100%;
+}
+.switch-container p {
+    margin-bottom: 0.25rem;
+}
+.switch-container small {
+    color: rgba(255, 255, 255, 0.7);
+}
+.switch {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    width: 42px;
+    height: 24px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #999;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+input:checked + .slider {
+    background-color: #ffffff;
+}
+input:checked + .slider:before {
+    background-color: #96ad3e;
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+}
+.slider.round {
+    border-radius: 3px;
+}
+.slider.round:before {
+    border-radius: 3px;
+}
+
+/* Table */
+.table th {
+    font-weight: 600;
+}
+.table td {
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    padding: 1rem 0 3rem 0;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* Media queries */
+@media (min-width: 576px) {
+    #contact-form .container h2 {
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 56px;
+    }
+}
+@media (min-width: 768px) {
+    /*.btn-primary {*/
+        /*display: inline-block;*/
+        /*width: 248px;*/
+    /*}*/
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}

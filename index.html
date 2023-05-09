@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Convert UTF8 to Hex</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <script src="js/utf8-to-hex.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="py-3">
+            <a href="a">Hexify</a>
+        </header>
+
+        <hr>
+
+        <div id="converter" class="pt-4">
+            <h2>Convert UTF8 to Hex</h2>
+            <p>UTF8 to hexadecimal conversion calculator. Insert your UTF8 characters and collect the resulting hexadecimal numbers.</p>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card text-white bg-blue">
+                        <div class="card-header">
+                            <strong>UTF8</strong>
+                        </div>
+                        <div class="card-body card-input">
+                            <textarea id="input" rows="8" placeholder="Insert your UTF8 characters here ..." class="form-control form-text" oninput="utf8ToHex()"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="output" class="card text-white bg-blue">
+                        <div class="card-header">
+                            <strong>HEX</strong>
+                            <button id="copyButton" onclick="copyHexResult()" class="btn btn-light btn-sm float-right copy-button">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <textarea id="hexResult" rows="8" placeholder="... and collect your HEX numbers here." class="form-control form-text" readonly></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- copy tis -->
+            <div id="copyMessage" class="copy-message"></div>
+            <div class="pt-4">
+                <div class="card text-white bg-blue">
+                    <div class="card-header">
+                        <strong>UTF8 to HEX conversion options</strong>
+                    </div>
+                    <div class="card-body">
+                        <div class="switch-container mb-3">
+                            <label class="switch m-0">
+                                <input type="checkbox" checked ="checked" id="addPrefix" onclick="utf8ToHex()">
+                                <span class="slider round"></span>
+                            </label>
+                            <p>Add 0x HEX prefix</p>
+                            <small>Make sure that all HEX values are starting with 0x</small>
+                        </div>
+                        <div class="switch-container">
+                            <label class="switch m-0">
+                                <input type="checkbox" id="addZeros" onclick="utf8ToHex()">
+                                <span class="slider round"></span>
+                            </label>
+                            <p>Add 0 in between HEX values</p>
+                            <small>Add 0 after HEX value</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <footer>
+            <span class="mr-3">&copy;HEX Hero</span>
+            <a href="a" class="mr-3">Privacy policy</a>
+            <a href="a">Terms of Use</a>
+        </footer>
+    </div>
+</body>
+
+</html>
